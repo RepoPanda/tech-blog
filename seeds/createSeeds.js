@@ -10,7 +10,7 @@ const RANDOMUSERS = [];
 
 function createRandomUser() {
   return {
-    name: faker.internet.userName(),
+    username: faker.internet.userName(),
     email: faker.internet.email(),
     password: faker.internet.password(),
   };
@@ -26,8 +26,8 @@ const POSTS = [];
 
 function createRandomPost() {
   return {
-    title: faker.lorem.words(Math.ceil(Math.random() * 5)),
-    content: faker.lorem.paragraphs(Math.ceil(Math.random() * 4)),
+    post_title: faker.lorem.words(Math.ceil(Math.random() * 5)),
+    body: faker.lorem.paragraphs(Math.ceil(Math.random() * 4)),
     date_created: faker.date.between(
       "2020-01-01T00:00:00.000Z",
       "2023-01-01T00:00:00.000Z"
