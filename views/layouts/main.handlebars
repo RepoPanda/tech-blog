@@ -5,26 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tech Blog</title>
-  <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
+  <div class="flex-column min-110-vh">
+    <nav class="navbar">
+    <ul>
+      <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+       {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+        {{else}}
+        <li class="li-inline nav-item"><a href="/login">Login</a></li>
+        {{/if}}
+    </ul>
+  </nav>
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <span role="img" aria-label="money">💸</span>
+        <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="100" r="100" fill="blue" /><text x="150" y="125" font-size="45" text-anchor="middle" fill="white">Tech Blog</text></svg>
         <a href="/">The Tech Blog</a>
       </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
