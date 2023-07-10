@@ -10,7 +10,7 @@ router.get('/', async (req,res) => {
 
         const posts = postData.map((post) => post.get({plain: true}));
 
-        res.render('all-post', {posts});
+        res.render('all-posts', {posts});
     } catch(err) {
         res.status(500).json(err);
     }    
