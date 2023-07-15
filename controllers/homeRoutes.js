@@ -45,6 +45,7 @@ router.get("/post/:id", async (req, res) => {
 
 // will need to GET all posts from logged in user
 
+router.get('/login')
 
 // exports all from home-router
 module.exports = router;

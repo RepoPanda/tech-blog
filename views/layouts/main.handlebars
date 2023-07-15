@@ -4,35 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
+  <title>Tech Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pacifico&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="flex-column min-110-vh">
-    <nav class="navbar">
-    <ul>
-      <li class="li-inline nav-item"><a href="/">Home</a></li>
-       {{#if logged_in}}
+    <div>
+      <nav class="navbar">
+      <ul>
+        <li class="li-inline nav-item"><a href="/">Home</a></li>
+        {{#if logged_in}}
         <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li> |
         <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
         {{else}}
         <li class="li-inline nav-item"><a href="/login">Login</a></li>
         {{/if}}
-    </ul>
-  </nav>
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="100" r="100" fill="blue" /><text x="150" y="125" font-size="45" text-anchor="middle" fill="white">Tech Blog</text></svg>
-        <a href="/">The Tech Blog</a>
+      </ul>
+    </nav>
+    <header class="hero">
+      <h1 class="app-title">
+        <a href="/">
+          <svg version="1.1" width="275" height="110" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="10" width="225" height="100" fill="#0f3923" />
+            <text x="150" y="100" font-size="32" text-anchor="middle" fill="#fffdd0">The Tech Blog</text>
+          </svg>
+        </a>
       </h1>
     </header>
-    <main class="container container-fluid mt-5">
+    </div>
+    <main class="col-auto">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
 
