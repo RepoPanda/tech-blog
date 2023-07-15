@@ -76,7 +76,7 @@ input {
 }
 
 .nav-item {
-  margin: 0 40px;
+  margin: 35 px;
 }
 
 .nav-item a {
@@ -85,7 +85,7 @@ input {
 
 .hero {
   font-family: "pacifico", "sans-serif";
-  padding: 3% 4%;
+  padding: 1%;
   background-color: var(--dark);
   color: var(--primary);
 }

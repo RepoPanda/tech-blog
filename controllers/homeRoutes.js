@@ -43,9 +43,15 @@ router.get("/post/:id", async (req, res) => {
 
 
 
-// will need to GET all posts from logged in user
+// route to GET login page
+router.get('/login', (req,res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
 
-router.get('/login')
+  res.render('login');
+});
 
 // exports all from home-router
 module.exports = router;
