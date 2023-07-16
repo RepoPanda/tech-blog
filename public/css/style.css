@@ -2,6 +2,7 @@
   --primary: #f7f4ef;
   --secondary: #fffdd0;
   --tertiary: #cccaa6;
+  --lighter-dark:#00A86B;
   --light-dark: #003c00;
   --dark: #001e00;
   --border-radius: 0.3rem;
@@ -34,11 +35,12 @@ h6 {
 }
 
 h2 a:visited {
-  color: var(--tertiary);
+  color: var(--dark);
 }
 
 h2 a {
-  color: var(--primary);
+  color: var(--lighter-dark);
+  text-decoration:solid
 }
 
 header {
