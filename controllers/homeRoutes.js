@@ -19,7 +19,7 @@ router.get('/', async (req,res) => {
 // will need to GET a sole post
 router.get("/post/:id", async (req, res) => {
   try {
-    const postData = await Post.findByPk(re.params.id, {
+    const postData = await Post.findByPk(req.params.id, {
       include: [
         User,
         {
