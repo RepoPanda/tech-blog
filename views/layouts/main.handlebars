@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pacifico&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pacifico&family=Yuji+Boku&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/style.css">
@@ -15,27 +16,27 @@
   <div class="flex-column min-110-vh">
     <div>
       <nav class="navbar">
-      <ul>
-        <li class="li-inline nav-item"><a href="/">Home</a></li>
-        {{#if logged_in}}
-        <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li> |
-        <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
-        {{else}}
-        <li class="li-inline nav-item"><a href="/login">Login</a></li>
-        <li class="li-inline nav-item"><a href="/signup">Sign Up</a></li>
-        {{/if}}
-      </ul>
-    </nav>
-    <header class="hero">
-      <h1 class="app-title">
-        <a href="/">
-          <svg version="1.1" width="275" height="110" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="10" width="275" height="100" fill="#0f3923" />
-            <text x="135" y="80" font-size="40" text-anchor="middle" fill="#fffdd0">The Tech Blog</text>
-          </svg>
-        </a>
-      </h1>
-    </header>
+        <ul>
+          <li class="li-inline nav-item"><a href="/">Home</a></li>
+          {{#if logged_in}}
+          <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li> |
+          <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+          {{else}}
+          <li class="li-inline nav-item"><a href="/login">Login</a></li>
+          <li class="li-inline nav-item"><a href="/signup">Sign Up</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+      <header class="hero">
+        <h1 class="app-title">
+          <a href="/">
+            <svg version="1.1" width="275" height="110" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="10" width="275" height="100" fill="#0f3923" />
+              <text x="135" y="80" font-size="40" text-anchor="middle" fill="#fffdd0">The Tech Blog</text>
+            </svg>
+          </a>
+        </h1>
+      </header>
     </div>
     <main class="col-auto">
       <!-- Render the sub layout -->
