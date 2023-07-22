@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Post } = require('../models');
 const withAuth = require('../utils/auth');
 
+// GET all posts for dashboard
 router.get('/', withAuth, async (req,res) => {
     try {
         const postData = await Post.findAll({
@@ -12,7 +13,7 @@ router.get('/', withAuth, async (req,res) => {
 
         const posts = postData.map((post) => post.get({plain: true}));
 
-        res.render('all-posts-admin', {
+        res.render('admin-page-all-posts', {
             layout: 'dashboard',
             posts,
         });
@@ -21,3 +22,10 @@ router.get('/', withAuth, async (req,res) => {
     }
 });
 
+// GET new-post for dashboard
+
+
+// GET one post by id for dashboard
+
+
+  module.exports = router;
