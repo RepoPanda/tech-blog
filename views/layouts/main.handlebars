@@ -20,7 +20,7 @@
           <li class="li-inline nav-item"><a href="/">Home</a></li>
           {{#if logged_in}}
           <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-          <li class="li-inline nav-item"><a href="/logout">Logout</a></li>
+          <li class="li-inline nav-item"><a href="#" id="link-logout">Logout</a></li>
           {{else}}
           <li class="li-inline nav-item"><a href="/login">Login</a></li>
           <li class="li-inline nav-item"><a href="/signup">Sign Up</a></li>
@@ -35,6 +35,7 @@
               <text x="135" y="80" font-size="40" text-anchor="middle" fill="#fffdd0">The Tech Blog</text>
             </svg>
           </a>
+        </h1>
       </header>
     </div>
     <main class="col-auto">
