@@ -22,10 +22,14 @@ router.get('/', withAuth, async (req,res) => {
     }
 });
 
-// GET new-post for dashboard
+// GET a new post for dashboard
+router.get('/new', withAuth, (req,res) => {
+    res.render('post-new', {
+        layout: 'dashboard'
+    });
+});
 
-
-// GET one post by id for dashboard
+// GET to edit one post by id for dashboard
 
 
   module.exports = router;
