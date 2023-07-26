@@ -22,14 +22,17 @@ router.get('/', withAuth, async (req,res) => {
     }
 });
 
-// GET a new post for dashboard
+
+// if logged in, render create-post from dashboard
 router.get('/create', withAuth, (req,res) => {
     res.render('create-post', {
         layout: 'dashboard'
     });
 });
 
-// GET to edit one post by id for dashboard
+// if logged in, render edit-post from dashboard
+
+
 
 
   module.exports = router;
