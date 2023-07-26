@@ -23,8 +23,8 @@ router.get('/', withAuth, async (req,res) => {
 });
 
 // GET a new post for dashboard
-router.get('/new', withAuth, (req,res) => {
-    res.render('post-new', {
+router.get('/create', withAuth, (req,res) => {
+    res.render('create-post', {
         layout: 'dashboard'
     });
 });
