@@ -34,4 +34,6 @@ router.put('/:id', withAuth, async (req, res) => {
     }
 });
 
+//if user is logged in, they can delete their posts
+
 module.exports = router;
