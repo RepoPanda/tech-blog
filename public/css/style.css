@@ -159,8 +159,6 @@ input {
   background-color: var(--dark);
 }
 
-
-
 /* FLEX CONTENT */
 .flex-row {
   display: flex;

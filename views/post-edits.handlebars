@@ -2,13 +2,15 @@
   <div class="card-header">
     <h2>Edit Post</h2>
   </div>
-  <form id="edit-post-form" class="card-body">
-    <input type="hidden" name="post-id" value="{{post.id}}" />
+  <form id="post-edits-form" class="card-body">
+    <input class="post-id" type="hidden" value="{{post.id}}" />
 
     <label class="form-label" for="post-title">Title</label>
-    <input type="text" name="post-title" value="{{post.post_title}}" class="form-input" />
+    <input id="post-edits-title" type="text" value="{{post.post_title}}" class="form-input" />
 
     <label class="form-label" for="post-body">Content</label>
-    <textarea name="post-body" class="form-input">{{post.body}}</textarea>
+    <textarea id="post-edits-body" class="form-input">{{post.body}}</textarea>
+
+    <button type="submit" class="btn">Update</button>
   </form>
 </div>
