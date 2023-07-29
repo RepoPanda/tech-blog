@@ -159,6 +159,34 @@ input {
   background-color: var(--dark);
 }
 
+.footer a {
+  display: inline-block;
+  padding: 1em;
+  margin-bottom: .5em;
+  background-color: var(--dark);
+  color: var(--primary);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+/* CARDS */
+.card {
+  margin: 0 0 20px 0;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+}
+
+.card-header {
+  color: var(--primary);
+  background-color: var(--dark);
+  padding: 1%;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.card-body {
+  padding: 1%;
+}
+
 /* FLEX CONTENT */
 .flex-row {
   display: flex;
@@ -210,4 +238,39 @@ input {
 .nav-container {
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+
+/* FORM */
+.form-label,
+.form-input,
+.form-textarea {
+  display: block;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  margin: 0 0 0 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1%;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+}
+
+.min-100-vw {
+  min-width: 100vw;
+}
+
+/* FONT UTILS */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* HEIGHT / WIDTH UTILS */
+.min-100-vh {
+  min-height: 100vh;
 }
