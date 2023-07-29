@@ -3,7 +3,7 @@
     <h2>Edit Post</h2>
   </div>
   <form id="post-edits-form" class="card-body">
-    <input class="post-id" type="hidden" value="{{post.id}}" />
+    <input id="post-id" type="hidden" value="{{post.id}}" />
 
     <label class="form-label" for="post-title">Title</label>
     <input id="post-edits-title" type="text" value="{{post.post_title}}" class="form-input" />
@@ -14,3 +14,5 @@
     <button type="submit" class="btn">Update</button>
   </form>
 </div>
+
+<script src="/js/edit.js"></script>
