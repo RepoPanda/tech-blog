@@ -36,4 +36,23 @@ router.put('/:id', withAuth, async (req, res) => {
 
 //if user is logged in, they can delete their posts
 
+router.delete('/:id', withAuth, async (req, res) => {
+    try {
+        const [affectedRows] = Post.destroy({
+            where: {
+                id: req.params.id,
+            },
+        });
+
+        if (affectedRows > 0) {
+            res.status(200).end();
+        } else {
+            res.status(404).end();
+        }
+        
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
