@@ -11,14 +11,14 @@
     </div>
   </article>
 
-  {{#if post.comment}}
+  {{#if post.comments}}
   <section class="card">
     <div class="card-header">
       <h3>Comments</h3>
     </div>
 
     <div class="card-body">
-      {{#each post.comment}}
+      {{#each post.comments}}
       <div>
         <p>
           {{comment}}
