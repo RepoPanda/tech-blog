@@ -41,6 +41,6 @@ You can also logout by clicking on the logout button.
 [My Github Repo](https://github.com/RepoPanda/tech-blog)
 
 
-[My Deployed Heroku Website]()
+[My Deployed Heroku Website](https://techblog01-396fa7e7c10f.herokuapp.com/)
 
 
