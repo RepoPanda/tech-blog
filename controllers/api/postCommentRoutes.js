@@ -16,4 +16,7 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+// deletes a comment
+router.delete('/:id', withAuth, async (req, res) => {});
+
 module.exports = router;

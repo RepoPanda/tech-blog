@@ -24,7 +24,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [4],///password must be at least 4 characters long cheange to 8 later
+        len: [8],///password must be at least 4 characters long cheange to 8 later
       },
     },
   },

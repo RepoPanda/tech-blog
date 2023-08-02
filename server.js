@@ -17,10 +17,10 @@ const hbs = exphbs.create({ helpers });
 const sess = {
   secret: process.env.SECRET,
   cookie: {
-    // maxAge: 1 * 60 * 60 * 1000, // session will expire after 1 hour
-    // httpOnly: true, // The cookie is not available via JavaScript in the browser
-    // secure: false, //  The cookie is only sent to the server with an encrypted request over the HTTPS protocol
-    // sameSite: 'strict', // The cookie is not sent with requests from external websites
+    maxAge: 1 * 60 * 60 * 1000, // session will expire after 1 hour
+    httpOnly: true, // The cookie is not available via JavaScript in the browser
+    secure: false, //  The cookie is only sent to the server with an encrypted request over the HTTPS protocol
+    sameSite: 'strict', // The cookie is not sent with requests from external websites
   },
   resave: false,
   saveUninitialized: true,
